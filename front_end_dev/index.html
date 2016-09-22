@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tjcccApp">
+
+<head>
+    <title>TJCCC Web Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Materialized Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">-->
+
+    <!-- TJCCC Stylesheet -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+
+<body ng-init="hello = 'hello world!'">
+    <h1>{{hello}}</h1>
+
+    <h2>Structur</h2>
+    <!-- navigation -->
+    <style>
+        /* temp styleing, remove later */
+        
+        nav>a {
+            padding: 6px;
+            display: inline-block;
+        }
+    </style>
+    <nav>
+        <a href="#/home">Home</a>
+        <a href="#/organization">Organization Bio & BOD Info</a>
+        <a href="#/events">Event Info</a>
+        <a href="#/jobs">Job Opportunity</a>
+        <a href="#/notyetfinished">HR</a>
+        <a href="#/notyetfinished">Business Promo</a>
+        <a href="#/notyetfinished">Membership</a>
+        <a href="#/notyetfinished">Tips</a>
+        <a href="#/notyetfinished">Contact/FAQ</a>
+    </nav>
+
+    <div>
+        <ui-view></ui-view>
+    </div>
+
+    <!-- AngularJS JavaScript-->
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angular-ui-router.js"></script>
+
+    <!-- Materialized Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>-->
+
+    <!-- TJCCC JavaScript -->
+    <script src="app/app.modules.js"></script>
+    <script src="app/components/home/home.ctr.js"></script>
+    <script src="app/components/organization/organization.ctr.js"></script>
+    <script src="app/components/events/events.ctr.js"></script>
+    <script src="app/components/jobs/jobs.ctr.js"></script>
+
+</body>
+
+</html>
