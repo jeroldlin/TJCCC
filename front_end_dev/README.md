@@ -57,6 +57,7 @@ Thank you!
 ##  4. <a name='Roadmap-3'></a>Roadmap
 According to Sam, basic structure will be:
 TJCCC WEBSITE
+
 1. Organization bio and Bods Information 
 2. Event information
 3. Job opportunity
