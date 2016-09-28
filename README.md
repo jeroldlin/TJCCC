@@ -28,9 +28,10 @@ Creating a web site for TJCCC by Jerry, Luke, and Taiwei.
 1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
 2. Fork the Repo to your account.
 3. Clone the Repo to your local machine.
-4. In the directory from your local machine, do `composer install`.
+4. In the directory from your local machine, run `composer install`.
 5. Start the Apache server by using XAMPP Control Panel you installed earlier.
-6. Open your browser. Go to `http://localhost:8765/` 
+6. In the working directory, run `bin\cake server`.
+7. Open your browser. Go to `http://localhost:8765/`.
 
 
 ##  4. <a name='Configuration-3'></a>Configuration
@@ -59,7 +60,6 @@ app/
 ---------- error/
 --------------- error.tpl.html
 ----- app.module.js
------ app.routes.js
 assets/
 ----- img/      // Images and icons for your app
 ----- css/      // All styles and style related files (SCSS or LESS files)

@@ -1,0 +1,17 @@
+/* temp styling here, remove later */
+
+#header nav{
+    border-bottom: 1px solid #222;
+}
+#header nav>a {
+    padding: 6px;
+    display: inline-block;
+}
+
+#footer nav{
+    border-top: 1px solid #222;
+}
+#footer nav>a {
+    padding: 6px;
+    display: inline-block;
+}
