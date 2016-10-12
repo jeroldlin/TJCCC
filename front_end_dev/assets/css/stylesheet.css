@@ -1,17 +1,404 @@
-/* temp styling here, remove later */
+/* Chinese Font: Google Noto CJK */
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
-#header nav{
-    border-bottom: 1px solid #222;
+/* Color */
+.tjccc-blue {
+    background-color: #0071bb !important;
 }
-#header nav>a {
-    padding: 6px;
+.tjccc-blue-text {
+    color: #0071bb !important;
+}
+.disabled .tjccc-blue-text {
+    color: #b6e5ff !important;
+}
+.btn:hover, 
+.btn-large:hover {
+    background-color: #147DC2; /*tjccc-blue lighten-1*/
+}
+button:focus {
+    outline: none;
+    background-color: #0063A3; /*tjccc-blue darken-1*/
+}
+input:not([type]):focus:not([readonly]), 
+input[type=text]:focus:not([readonly]), 
+input[type=password]:focus:not([readonly]), 
+input[type=email]:focus:not([readonly]), 
+input[type=url]:focus:not([readonly]), 
+input[type=time]:focus:not([readonly]), 
+input[type=date]:focus:not([readonly]), 
+input[type=datetime]:focus:not([readonly]), 
+input[type=datetime-local]:focus:not([readonly]), 
+input[type=tel]:focus:not([readonly]), 
+input[type=number]:focus:not([readonly]), 
+input[type=search]:focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #0071bb;
+    box-shadow: 0 1px 0 0 #0071bb;
+}
+.tag.tag-green {
+    background-color: #7ac943;
+}
+.tag.tag-red {
+    background-color: #ff1d25;
+}
+.tag.tag-blue {
+    background-color: #0071bb;
+}
+.tag.tag-orange {
+    background-color: #ff931e;
+}
+.tag.tag-pink {
+    background-color: #ff7bac;
+}
+.pagination li.active {
+    background-color: #57A5D9; /* TJCCC-blue lighten-4 */
+}
+
+/* Pagination */
+.pagination li a {
+    padding: 0 7px;
+}
+
+/* Typography */
+body {
+    font-family: "cwTeXHei", "Open Sans", sans-serif;
+    font-weight: normal;
+    color: #444;
+}
+.distribute-even {
+    text-align: justify;
+}
+.distribute-even a {
     display: inline-block;
 }
-
-#footer nav{
-    border-top: 1px solid #222;
+.distribute-even:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
 }
-#footer nav>a {
-    padding: 6px;
+
+/* Nav */
+.side-nav {
+    padding: 0 15px;
+    padding-bottom: 50px;
+    width: 220px;
+}
+.side-nav.fixed a {
+    padding: 0 15px;
+    margin: 0 -15px;
+}
+.side-nav.fixed a.active:hover {
+    background-color: transparent;
+    cursor: default;
+}
+.side-nav.fixed a.active {
+    color: #ccc;
+}
+.nav-header-text {
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.nav-header-text > a {
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    height: auto;
+    transition: opacity 0.3s ease-out;
+}
+.nav-header-text > a:hover {
+    background-color: transparent;
+    opacity: 0.5;
+}
+.nav-header-social {
+    display: block;
+    margin: 10px 0 -30px 0;
+}
+.side-nav .nav-header-social > a {
     display: inline-block;
+    width: auto;
+}
+.side-nav .nav-header-social > a:hover {
+    background-color: transparent;
+}
+.side-nav .nav-header-social > a > img {
+    transition: all 0.3s ease-out;
+}
+.side-nav .nav-header-social > a:hover > img {
+    transform: rotateZ(-30deg);
+    opacity: 0.5;
+}
+.button-collapse {
+    color: white;
+    background-color: #444;
+    border: 1px solid #efefef;
+    box-shadow: 0 0 3px rgba(250,250,250,0.35);
+    padding: 8px 8px 2px;
+    border-radius: 50%;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+}
+
+/* Carousel */
+.carousel.carousel-slider .carousel-item {
+    background: #ccc no-repeat center bottom;
+    background-size: cover;
+}
+.carousel-desc {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(250,250,250,0.6);
+    padding: 9px 230px 9px 20px;
+    overflow: hidden;
+}
+.carousel-desc button {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+    font-size: 1.2em;
+}
+.carousel-desc span,
+.carousel-desc h2,
+.carousel-desc p {
+    margin: 0;
+}
+.carousel.carousel-slider .carousel-item .carousel-desc span {
+    display: inline-block;
+}
+.carousel.carousel-slider .carousel-item .carousel-desc h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+}
+.carousel.carousel-slider .carousel-item .carousel-desc p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+}
+.carousel-desc .carousel-desc-back {
+    background: #ededed no-repeat center bottom;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 420px; /* carousel height */
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    filter: blur(10px);
+}
+.carousel .indicators {
+    top: 0;
+    height: 60px;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.hero .hero-item {
+    height: inherit;
+    background: #ccc no-repeat center bottom;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.hero-desc {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(250,250,250,0.6);
+    padding: 9px 230px 9px 20px;
+    overflow: hidden;
+}
+.hero-desc button {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+    font-size: 1.2em;
+}
+.hero-desc span,
+.hero-desc h2,
+.hero-desc p {
+    margin: 0;
+}
+.hero .hero-item .hero-desc span {
+    display: inline-block;
+}
+.hero .hero-item .hero-desc h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+}
+.hero .hero-item .hero-desc p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+}
+.hero-desc .hero-desc-back {
+    background: #ededed no-repeat center bottom;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 420px; /* carousel height + 20px for blur effect */
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+/* Tag */
+.tag {
+    background: #444;
+    color: white;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+/* Layout */
+#header, #body-content, #footer {
+    padding-left: 220px;
+}
+
+/* Dom Element */
+hr.hr {
+    border: none;
+    margin: 0;
+    background-color: #ccc;
+    height: 1px;
+}
+.hr.hr-main {
+    background-color: #b3b3b3;
+    height: 8px;    
+}
+
+/* Form */
+input:not([type]), 
+input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=url], 
+input[type=time], 
+input[type=date], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=tel], 
+input[type=number], 
+input[type=search], 
+textarea.materialize-textarea {
+    margin-bottom: 10px;
+}
+.input-field {
+    margin-top: 0;
+}
+
+/* List & Item */
+.list {
+    padding: 10px;
+}
+.item {
+    margin-bottom: 25px;
+}
+.item.item-space-left {
+    padding-left: 55px;
+}
+.item-title {
+    font-weight: 600;
+}
+.item .item-datetime {
+    position: absolute;
+    margin: -35px 0 0 -55px;
+    width: 50px;
+}
+.item-datetime > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.item-datetime > span:first-child {
+    color: #0071bb;
+    font-weight: 600;
+}
+.item-datetime > span:nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 15px;
+}
+.item.item-divider {
+    margin-top: 40px;
+}
+.item.item-divider:before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 8px;
+    background-color: #ccc;
+    margin-left: -20px;
+}
+
+/* Responsiveness - small */
+@media only screen and (max-width: 600px){
+    .carousel-desc {
+        padding: 9px 10px 50px 10px;
+    }
+    .carousel-desc button {
+        bottom: 5px;
+        height: 40px;
+        line-height: 40px;
+        right: 2.5%;
+        width: 95%;
+    }
+    .hero-desc {
+        padding: 9px 10px;
+    }
+    .item.item-space-left {
+        padding-left: 0;
+    }
+    .item .item-datetime {
+        position: relative;
+        margin: -10px auto 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .item-datetime > span {
+        text-align: center;
+        width: auto;
+        padding: 0 2px;
+        display: inline;
+        color: #ccc;
+    }
+    .item-datetime > span:first-child,
+    .item-datetime > span:nth-child(2) {
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1em;
+        color: #ccc;
+    }
+    .item.item-divider:before {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .item-title,
+    .item-tags {
+        text-align: center;
+    }
+    .item-button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Responsiveness - medium */
+@media only screen and (max-width: 992px){
+    #header, #body-content, #footer {
+        padding-left: 0;
+    }
 }

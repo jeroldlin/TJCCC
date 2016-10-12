@@ -2,15 +2,47 @@
 <html lang="en" ng-app="tjcccApp">
 
 <head>
-    <title>TJCCC Web Site</title>
+    <title>TJCCC - Taiwanese Junior Chambers of Commerce of Chicago</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="">
+   
+    <!-- Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+	<!-- Materialize CSS -->
+	<link href="assets/css/materialize.min.css" rel="stylesheet">
 
     <!-- Materialized Compiled and minified CSS -->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">-->
 
     <!-- TJCCC Stylesheet -->
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+ 
+    <!-- jQuery -->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>-->
+	<script src="assets/libs/jquery-1.10.2.min.js"></script>
+   
+    <!-- AngularJS JavaScript -->
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angular-ui-router.js"></script>
+    
+    <!-- Materialize js -->
+    <script src="assets/libs/materialize.min.js"></script>
+    
+    <!-- Angular-Materialize -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
+    
+	<!-- Custom JavaScript -->
+	<script src="assets/libs/script.js"></script>
 </head>
 
 <body ng-init="hello = 'hello world!'">
@@ -26,24 +58,18 @@
     <!-- page footer, directory: app/shared/footer/footer.tpl.html -->
     <div id="footer" footer></div>
 
-    <!-- AngularJS JavaScript-->
-    <script src="assets/libs/angular.min.js"></script>
-    <script src="assets/libs/angular-ui-router.js"></script>
-
-    <!-- Materialized Compiled and minified JavaScript -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>-->
-
     <!-- TJCCC JavaScript -->
     <script src="app/app.modules.js"></script>
     <script src="app/components/home/home.ctr.js"></script>
+    <script src="app/components/about/about.ctr.js"></script>
+    <script src="app/components/career/career.ctr.js"></script>
     <script src="app/components/organization/organization.ctr.js"></script>
     <script src="app/components/events/events.ctr.js"></script>
     <script src="app/components/jobs/jobs.ctr.js"></script>
     <script src="app/components/human_resource/human_resource.ctr.js"></script>
-    <script src="app/components/business_promotion/business_promotion.ctr.js""></script>
-
+    <script src="app/components/business_promotion/business_promotion.ctr.js"></script>
     <script src="app/shared/header/header.dir.js"></script>
-    <script src="app/shared/footer/footer.dir.js"></script>
+    <script src="app/shared/footer/footer.dir.js"></script>    
 </body>
 
 </html>

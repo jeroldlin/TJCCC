@@ -2,7 +2,8 @@
 
 angular
     .module('tjcccApp', [
-        'ui.router'
+        'ui.router',
+        'ui.materialize'
     ])
 
 .config(function (
@@ -17,6 +18,11 @@ angular
             templateUrl: 'app/components/home/home.tpl.html',
             controller: 'homeController as home'
         })
+        .state('about', {
+            url: '/about',
+            templateUrl: 'app/components/about/about.tpl.html',
+            controller: 'aboutController as about'
+        })
         .state('organization', {
             url: '/organization',
             templateUrl: 'app/components/organization/organization.tpl.html',
@@ -26,6 +32,16 @@ angular
             url: '/events',
             templateUrl: 'app/components/events/events.tpl.html',
             controller: 'eventsController as events'
+        })
+        .state('career', {
+            url: '/career',
+            templateUrl: 'app/components/career/career.tpl.html',
+            controller: 'careerController as career'
+        })
+        .state('blog', {
+            url: '/blog',
+            templateUrl: 'app/components/blog/blog.tpl.html',
+            controller: 'blogController as blog'
         })
         .state('jobs', {
             url: '/jobs',
@@ -49,13 +65,11 @@ angular
         .state('tips', {
             url: '/tips',
             templateUrl: 'app/components/tips/tips.tpl.html'
+        })        
+        .state('faq', {
+            url: '/faq',
+            templateUrl: 'app/components/faq/faq.tpl.html'
         })
-        
-        .state('contact_faq', {
-            url: '/contact_faq',
-            templateUrl: 'app/components/contact_faq/contact_faq.tpl.html'
-        })
-
         .state('error', {
             url: '/error',
             templateUrl: 'app/components/error/error.tpl.html'
