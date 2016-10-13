@@ -1,6 +1,6 @@
 /* Chinese Font: Google Noto CJK */
-/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);*/
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);*/
 
 /* Color */
 .tjccc-blue {
@@ -62,7 +62,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 /* Typography */
 body {
-    font-family: "cwTeXHei", "Open Sans", sans-serif;
+/*    font-family: "cwTeXHei", "Open Sans", sans-serif;*/
+    font-family: "Noto Sans TC", "Open Sans", sans-serif;
     font-weight: normal;
     color: #444;
 }
@@ -83,6 +84,7 @@ body {
     padding: 0 15px;
     padding-bottom: 50px;
     width: 230px;
+    overflow-x: hidden;
 }
 .side-nav.fixed a {
     padding: 0 15px;
